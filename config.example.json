@@ -1,10 +1,10 @@
 {
-	"mongo": "mongodb://127.0.0.1:27017/ircanywhere",
+	"mongo": "mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/",
 	/* -- required
 	 * -- string
 	 * -- usage: The mongodb database url */
 
-	"oplog": "mongodb://127.0.0.1:27017/local",
+	"oplog": "mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/",
 	/* -- required
 	 * -- string
 	 * -- usage: The mongodb oplog url - Note you may not have this available on shared mongohq and similar hosts */
