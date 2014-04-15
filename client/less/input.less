@@ -1,0 +1,55 @@
+@import "header.less";
+
+.channel-input {
+	padding: 0;
+	margin: 0;
+	border-top: 2px solid #D9D9D9;
+	background: @white;
+	width: 100%;
+	.snap-notop;
+
+	td:first-child {
+		width: 100px;
+	}
+
+	td:last-child {
+		padding-right: 6px;
+	}
+
+	.nick-button {
+		margin: 0;
+		padding: 9px 14px 9px 31px;
+		font-size: 13px;
+		font-weight: bold;
+	}
+
+	form.input-area {
+		padding: 0 4px;
+		margin: 0;
+		border: 1px solid #0069D6;
+		color: #000;
+		background: #fff;
+		.border-radius(3px);
+	}
+
+	textarea {
+		outline: 0;
+		border: 0;
+		margin: 0;
+		display: inline-block;
+		font-size: 13px;
+		min-height: 18px;
+		line-height: 18px;
+		padding: 4px 0;
+		text-align: left;
+		resize: none;
+		width: 100%;
+		.box-shadow;
+	}
+
+	textarea:focus {
+		outline: 0;
+		border: 0;
+		.box-shadow;
+	}
+}
